@@ -1,5 +1,24 @@
 # GoogleSingInAngular
 
+This repository is an example of how to use Google Identity Sign In with Angular, directly, without using any external library.
+
+You would consider to use Google Identity Library directly because:
+
+1. Google Javascript library platform is deprecated and will be out of use from March 2023.
+
+2. At the moment, the external library for google sign in (angularx-social-login) is deprecated as well because of that.
+
+3. If angularx-social-login will upgrade to Google Identity it will be only for Angular13 and above. So if you have an earlier version, this could be a solution for you.
+
+# What to do:
+
+1. Add the Google Identity script tag, shown on file index.html. `<script src="https://accounts.google.com/gsi/client"></script>`
+2. Add a div with an Id, shown on app.component.html file.
+3. Follow the changes in app.component.ts file.
+4. Make sure to put your own google client id in its place, in the app.component.ts file.
+
+\*Last note, for local development, make sure you mention both http://localhost and http://localhost:4200 in google's cloud platform "Authorized Javascript Origins".
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.6.
 
 ## Development server
